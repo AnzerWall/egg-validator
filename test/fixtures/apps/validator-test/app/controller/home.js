@@ -5,6 +5,7 @@ module.exports = app => {
     return class extends app.Controller {
         *index(){
             this.ctx.body = 'hi, ' + app.plugins['validator'].name;
+            console.log(this.ctx.queries);
         }
     }
 }

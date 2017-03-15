@@ -18,8 +18,9 @@ describe('test/validator.test.js', () => {
     it('should GET /', () => {
         return request(app.callback())
             .get('/')
-            .expect(400)
-            .expect('缺少参数"num"')
+            .query({num: [1, 2]})
+            .expect(200);
+        // .expect('缺少参数"num"')
 
 
     });

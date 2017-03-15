@@ -4,8 +4,8 @@
 module.exports=Joi=>{
     return {
         index:{
-            query:{
-                num:Joi.number().required()
+            queries: {
+                num: Joi.array().items(Joi.number())
             }
         }
     }

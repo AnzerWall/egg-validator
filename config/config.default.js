@@ -7,20 +7,20 @@
  */
 
 exports.validator = {
-    pretty: false,//use egg-pretty
-    code: 400,// egg-pretty code or http status code
-    safe:false,//暂时不使用的参数
+    pretty: false, // use egg-pretty
+    code: 400, // egg-pretty code or http status code
+    safe: false, // 暂时不使用的参数
     i18n: {
         enable: false,
-        defaultLocale: "en-US",
+        defaultLocale: 'en-US',
         locales: {
-            "en-US": {}
-        }
+            'en-US': {},
+        },
     },
     options: {
         query: {allowUnknown: true},
         body: {allowUnknown: false},
         params: {allowUnknown: false},
-        header: {allowUnknown: true}
-    }
+        header: {allowUnknown: true},
+    },
 };
