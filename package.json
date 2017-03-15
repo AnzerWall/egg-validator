@@ -1,6 +1,6 @@
 {
   "name": "egg-validator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "joi validator layer",
   "eggPlugin": {
     "name": "validator",

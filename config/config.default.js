@@ -22,5 +22,7 @@ exports.validator = {
         body: {allowUnknown: false},
         params: {allowUnknown: false},
         header: {allowUnknown: true},
+        queries: {allowUnknown: true},
+
     },
 };
